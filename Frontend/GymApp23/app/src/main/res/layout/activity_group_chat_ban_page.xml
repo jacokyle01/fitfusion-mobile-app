@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/dark_gray"
+    tools:context=".GroupChatBanPage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:text="ADMIN DASHBOARD"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/BusinessDeleteNAVBtn"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="#FFE50000"
+                android:drawableLeft="@drawable/baseline_swap_horizontal_circle_24" />
+
+            <EditText
+                android:id="@+id/searchName"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:background="@color/transparent_white"
+                android:hint="Search User"
+                android:textColorHint="@color/light_gray"
+                />
+            <Button
+                android:id="@+id/searchBTN"
+                android:layout_width = "70dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_person_search_24"
+                android:backgroundTint="@color/teal_200"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/groupNameETxt"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/transparent_white"
+                android:hint="Group-chat name"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_gray"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/viewBlacklistBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:backgroundTint="@color/teal_200"
+                android:text="View Blacklist"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:backgroundTint="@color/teal_200"
+                android:text="View Blacklist"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/baselineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=""/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="298dp"
+            android:layout_marginTop="0dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ppl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Search for a user to have them appear here."
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:text="Group chat Blacklist:"/>
+
+        <ScrollView
+            android:id="@+id/blacklistScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="223dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/blackListCardsLL">
+
+                <TextView
+                    android:id="@+id/blacklistTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Blacklisted users will appear here."
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

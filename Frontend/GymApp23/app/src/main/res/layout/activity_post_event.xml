@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    tools:context=".PostEvent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/baseline_add_comment_24"
+        android:drawableTint="@color/teal_200"
+        android:layout_margin="20dp"
+        android:text="Add Event"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginBottom="0dp"
+        android:layout_margin="20dp"
+        android:text="Title:"
+        android:textStyle="bold"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/transparent_white"
+        android:hint="Title your Event"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_gray" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginBottom="0dp"
+        android:layout_margin="20dp"
+        android:text="Message:"
+        android:textStyle="bold"
+        android:textSize="16dp"/>
+
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/transparent_white"
+        android:hint="Message"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_gray" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="130dp"
+        android:id="@+id/postEventBtn"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/baseline_add_comment_24"
+        android:text="Post Event"
+        android:textAlignment="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="165dp"
+        android:id="@+id/postEventToBPBtn"
+        android:textColor="@color/white"
+        android:text="Back"
+        android:textAlignment="center"/>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    tools:context=".openUserDM">
+
+    <TextView
+        android:id="@+id/DirectMessageTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direct Message"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:src="@drawable/group_chat"
+        android:paddingLeft="20dp" />
+
+    <TextView
+        android:id="@+id/chattingWithTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DirectMessageTxt"
+        android:layout_marginTop="20dp"
+        android:text="Chatting with: "
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/chattingWithTxt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/transparent_white">
+
+        <TextView
+            android:id="@+id/messagesTxt_DM"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/DirectMessageTxt"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/userMsgEtx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DirectMessageTxt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/transparent_white"
+        android:hint="Enter message"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_gray" />
+
+    <Button
+        android:id="@+id/sendDMBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DirectMessageTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="Send DM" />
+
+    <Button
+        android:id="@+id/dmToHomeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DirectMessageTxt"
+        android:layout_marginStart="285dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="Home" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".HomePage"
+    android:id="@+id/HOMEPAGE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/dark_gray">
+
+        <TextView
+            android:id="@+id/helloUserTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:text="Hello User"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/light_gray"
+            >
+
+            <Button
+                android:id="@+id/searchFAB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="@drawable/search"
+                android:backgroundTint="@color/light_gray"
+                android:layout_marginStart="20dp"/>
+            <Button
+                android:id="@+id/UserProfileFAB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="@drawable/user_profile"
+                android:backgroundTint="@color/light_gray"
+                android:layout_marginStart="55dp"/>
+
+            <Button
+                android:id="@+id/messagesFAB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="@drawable/group_chat"
+                android:backgroundTint="@color/light_gray"
+                android:layout_marginStart="55dp"
+                />
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/light_gray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/light_gray">
+
+
+
+            <Button
+                android:id="@+id/workoutsFAB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="@drawable/app_logo"
+                android:backgroundTint="@color/light_gray"
+                android:layout_marginStart="20dp"/>
+
+            <Button
+                android:id="@+id/myGymFAB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/black"
+                android:foreground="@drawable/my_gym"
+                android:backgroundTint="@color/light_gray"
+                android:layout_marginStart="55dp"/>
+
+            <Button
+                android:id="@+id/challenge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/black"
+                android:foreground="@drawable/challenge"
+                android:backgroundTint="@color/light_gray"
+                android:layout_marginStart="55dp"/>
+
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="562dp"
+            android:layout_marginTop="25dp">
+
+
+            <LinearLayout
+                android:id="@+id/feedContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/feedTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feed here"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+
+<!--<<<<<<< HEAD-->
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/searchFAB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:foreground="@drawable/search" />-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/UserProfileFAB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="100dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:foreground="@drawable/user_profile" />-->
+<!--=======-->
+        </ScrollView>
+
+<!--&gt;>>>>>> 4efd3d1b965a9004b40ac3b6bc323a4415375e23-->
+
+
+<!--<<<<<<< HEAD-->
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/workoutsFAB"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="260dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:foreground="@drawable/app_logo" />-->
+<!--=======-->
+<!--&gt;>>>>>> 4efd3d1b965a9004b40ac3b6bc323a4415375e23-->
+
+
+<!--<<<<<<< HEAD-->
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/challenge"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="340dp"-->
+<!--        android:layout_marginTop="115dp"-->
+<!--        android:foreground="@drawable/challenge" />-->
+<!--=======-->
+    </LinearLayout>
+
+
+<!--&gt;>>>>>> 4efd3d1b965a9004b40ac3b6bc323a4415375e23-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

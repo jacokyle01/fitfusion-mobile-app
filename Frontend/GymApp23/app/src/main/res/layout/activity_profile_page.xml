@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePage"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/userPostBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="650dp"
+        app:srcCompat="@drawable/baseline_add_comment_24"
+        android:backgroundTint="@color/teal_200"
+        app:tint="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="top"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/cardview_dark_background"
+                    app:cardCornerRadius="250dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="250dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/PFP"
+                            android:scaleType="fitCenter"
+                            />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="user name"
+                        android:textColor="#fff"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/userProfilePointsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Points: "
+                        android:textColor="@color/white"/>
+                    <LinearLayout
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/postMyGymEtx"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent_white"
+                            android:text=""
+                            android:hint="gym name"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/light_gray"
+                            android:textSize="12dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_alignParentBottom="true"/>
+                        <Button
+                            android:id="@+id/postMyGymBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:backgroundTint="@color/teal_200"
+                            android:text="Post myGym"
+                            android:textColor="@color/white"
+                            android:textSize="11dp"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/showPosts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_200"
+                    android:text="Posts"
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/showRoutines"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_200"
+                    android:text="Routines"
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/homePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/home_page"
+                    android:backgroundTint="@color/teal_200"
+                    app:tint="@color/white"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/myGymChat_userProfilePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/group_chat"
+                    android:backgroundTint="@color/teal_200"
+                    app:tint="@color/white"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/userFollowBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_200"
+                    android:text="Friend"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/profile_scroll"
+            android:background="@color/light_gray">
+
+            <LinearLayout
+                android:id="@+id/profileInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:background="@color/light_gray"
+                />
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

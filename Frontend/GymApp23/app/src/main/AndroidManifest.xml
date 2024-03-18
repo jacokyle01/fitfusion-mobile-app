@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/loadinggray_fullpage"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GymApp23"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".PostRoutines"
+            android:exported="false" />
+
+        <activity
+            android:name=".UserPosts"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePictureSelect"
+            android:exported="false" />
+        <activity
+            android:name=".FriendsProfile"
+            android:exported="false" />
+        <activity
+            android:name=".GroupChatBanPage"
+            android:exported="false" />
+        <activity
+            android:name=".BusinessDeletePage"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHomePage"
+            android:exported="false" />
+
+        <activity
+            android:name=".FollowingList"
+            android:exported="false" />
+        <activity
+            android:name=".challengesPage"
+            android:exported="false" />
+        <activity
+            android:name=".SearchPage"
+            android:exported="false" />
+        <activity
+            android:name=".PostEvent"
+            android:exported="false" />
+        <activity
+            android:name=".BusinessProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".MyGymChat"
+            android:exported="false" />
+        <activity
+            android:name=".BusinessLogin"
+            android:exported="false" />
+        <activity
+            android:name=".DirectMessage"
+            android:exported="false" />
+        <activity
+            android:name=".openUserDM"
+            android:exported="false" />
+        <activity
+            android:name=".PostWorkout"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePage"
+            android:exported="false"
+            android:label="@string/title_activity_profile_page"
+            android:theme="@style/Theme.GymApp23.NoActionBar" />
+        <activity
+            android:name=".HomePage"
+            android:exported="false"
+            android:label="@string/title_activity_home_page"
+            android:theme="@style/Theme.GymApp23.NoActionBar" />
+        <activity
+            android:name=".UserSignup"
+            android:exported="false" />
+        <activity
+            android:name=".SignupOptions"
+            android:exported="false" />
+        <activity
+            android:name=".BusinessSignup"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

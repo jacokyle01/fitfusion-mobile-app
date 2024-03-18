@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".challengesPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/ChallengePage"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:text="Challange:"/>
+            <EditText
+                android:id="@+id/newChallengeUser"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text=""/>
+            <Button
+                android:id="@+id/createChallenge"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="send"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/encourageChallenge"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="encourage"/>
+            <Button
+                android:id="@+id/trashtalkChallenge"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="trashtalk"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/homebtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="home"/>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:scrollbars="none">
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/container"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/ppl"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent" />-->
+<!--            </LinearLayout>-->
+    </LinearLayout>
+</RelativeLayout>
